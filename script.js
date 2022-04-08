@@ -1,5 +1,5 @@
 import { WORDS } from "./words.js";
-
+import { MASTER } from "./master.js";
 const NUMBER_OF_GUESSES = 6;
 let guessesRemaining = NUMBER_OF_GUESSES;
 let currentGuess = [];
@@ -69,7 +69,7 @@ function checkGuess() {
         return
     }
     // change this
-    if (!WORDS.includes(guessString)) {
+    if (!MASTER.includes(guessString) && !WORDS.includes(guessString)) {
         toastr.error("Word not in list!")
         return
     }

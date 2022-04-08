@@ -1,4 +1,7 @@
 export const WORDS = [
+  'brim',
+  'peek',
+  'blind',
   'astra',
   'breach',
   'brimstone',
