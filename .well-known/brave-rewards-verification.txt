@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: aakashalloria007.github.io
+Token: 128cf4ecc23ef7f0bb17813b20e69d5c68d38858cf651206f828f4608f207ee2
