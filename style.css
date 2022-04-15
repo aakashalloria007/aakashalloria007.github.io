@@ -48,7 +48,7 @@ button {
 }
 
 .keyboard-button {
-  border-radius: 8px;
+  border-radius: 7px;
 }
 
 
@@ -61,7 +61,7 @@ button {
 .letter-box {
   fill: #8235f5;
   margin: 2px;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
   height: 3.5rem;
   width: 3.5rem;
@@ -86,7 +86,7 @@ button {
 }
 
 #keyboard-cont {
-  margin: 1.5rem 0;
+  margin: 0.5rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -114,18 +114,18 @@ button {
 
 
 .css-10yj4w7 rect {
-  width: 176px;
-  height: 176px;
+  width: 170px;
+  height: 170px;
   y: 30px;
 }
 
 
 .css-fi6ot5 {
-  width: 620px;
+  width: 610px;
   max-width: 80%;
-  margin: 16px;
+  margin: 10px;
   color: #8235f5;
-  font-size: 100px;
+  font-size: 98px;
   font-weight: 700;
   letter-spacing: 0em;
   -webkit-user-select: none;
@@ -139,4 +139,86 @@ button {
 
 #rect {
   fill: black;
+}
+
+
+.hvr-overline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  top: 0;
+  background: #2098D1;
+  height: 4px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.hvr-overline-from-center:hover:before,
+.hvr-overline-from-center:focus:before,
+.hvr-overline-from-center:active:before {
+  left: 0;
+  right: 0;
+}
+
+/* 
+ul {
+
+  display: flex;
+  position: relative;
+  top: 40%;
+  left: 50%;
+  align-items: center;
+  transform: translate(-50%, -50%);
+}
+
+ul li {
+  list-style: none;
+
+} */
+
+a {
+  text-align: center;
+
+  position: relative;
+  display: block;
+  width: 65px;
+  height: 65px;
+
+  line-height: 68px;
+  background: #333;
+  border-radius: 50%;
+  font-size: 30px;
+  color: #666;
+  transition: .5s;
+}
+
+a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #29b0b4;
+  transition: .5s;
+  transform: scale(.9);
+  z-index: -1;
+}
+
+a:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 5px #9dd8f0;
+}
+
+a:hover {
+  color: #677BC2;
+  box-shadow: 0 0 1px #9cf8a8;
+  text-shadow: 0 0 1p x #97f8a4;
 }
