@@ -6,7 +6,7 @@ let currentGuess = [];
 let nextLetter = 0;
 let rightGuessString = WORDS[Math.floor(Math.random() * WORDS.length)]
 let len = rightGuessString.length
-console.log(rightGuessString)
+// console.log(rightGuessString)
 
 var element = document.body;
 element.classList.toggle("dark");
@@ -81,13 +81,10 @@ function checkGuess() {
         let letter = currentGuess[i]
 
         let letterPosition = rightGuess.indexOf(currentGuess[i])
-        // is letter in the correct guess
         if (letterPosition === -1) {
             letterColor = '#533185'
         } else {
-            // now, letter is definitely in word
-            // if letter index and right guess index are the same
-            // letter is in the right position 
+
             if (currentGuess[i] === rightGuess[i]) {
                 // shade #2ed83c 
                 letterColor = '#2ed83c'
